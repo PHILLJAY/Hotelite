@@ -13,7 +13,8 @@ body {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    height: 500px;
+    height: 400px;
+    transition: all 0.5s;
 }
 
 .mainTitle {
@@ -24,6 +25,14 @@ body {
     font-family: 'Arvo', serif;
     font-size: 100px;
     text-align: left;
+    color: #ff8811;
+    transition: all 0.5s;
+    width: 42%;
+    float: left;
+}
+
+.mainTitle >h1{
+    display: inline-block;
 }
 
 .column {
@@ -31,12 +40,16 @@ body {
     width: 23%;
     margin-bottom: 16px;
     padding: 0 1%;
+    transition: all 0.5s;
 }
 .column >h3{
     text-align: center;
     margin-top: 45%;
     font-family: 'Arvo', serif;
     font-size: 50px;
+    font-weight: 400;
+    color: #292f36;
+    transition: all 0.5s;
 }
 
 @media screen and (max-width: 1000px) {
@@ -55,12 +68,22 @@ body {
     .column >h3{
         margin: 10%;  
     }
+    .mainTitle{
+        padding-top: 25px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .titleCard{
+        height: 200px;
+    }
 }
 
 .card {
     background-color: #fff8f0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+    transition: all 0.5s;
 }
 
 .container {
@@ -84,4 +107,9 @@ body {
 
 input[type="text"] {
     font-family: 'Arvo', serif;
+}
+
+#searchCombo{
+display: inline-block;
+float: left;
 }
