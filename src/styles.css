@@ -1,4 +1,6 @@
 body {
+    margin: 0%;
+    padding: 0%;
     background-color: #f4d06f;
 }
 
@@ -6,18 +8,22 @@ body {
     margin: 0px;
     background-color: #fff8f0;
     width: 100%;
-    border-radius: 0px, 0px, 40px, 40px;
+    border-radius: 0px 0px 40px 40px;
     text-align: center;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    height: 500px;
 }
 
 .mainTitle {
     margin: 0%;
-    text-align: center;
+    padding-top: 150px;
+    margin-left:16%;
+    padding-right: 0%;
     font-family: 'Arvo', serif;
     font-size: 100px;
+    text-align: left;
 }
 
 .column {
@@ -26,6 +32,13 @@ body {
     margin-bottom: 16px;
     padding: 0 1%;
 }
+.column >h3{
+    text-align: center;
+    margin-top: 45%;
+    font-family: 'Arvo', serif;
+    font-size: 50px;
+}
+
 @media screen and (max-width: 1000px) {
     .column {
         width: 45%;
@@ -39,9 +52,10 @@ body {
         display: block;
         padding: 0 5%;
     }
+    .column >h3{
+        margin: 10%;  
+    }
 }
-
-
 
 .card {
     background-color: #fff8f0;
@@ -66,4 +80,8 @@ body {
     overflow: hidden;
     margin-left: 10%;
     padding-top: 9%;
+}
+
+input[type="text"] {
+    font-family: 'Arvo', serif;
 }
