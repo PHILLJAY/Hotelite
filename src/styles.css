@@ -19,20 +19,21 @@ body {
 
 .mainTitle {
     margin: 0%;
-    padding-top: 150px;
-    margin-left:16%;
     padding-right: 0%;
     font-family: 'Arvo', serif;
     font-size: 100px;
     text-align: left;
     color: #ff8811;
     transition: all 0.5s;
-    width: 42%;
     float: left;
 }
 
-.mainTitle >h1{
-    display: inline-block;
+.container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -50,6 +51,12 @@ body {
     font-weight: 400;
     color: #292f36;
     transition: all 0.5s;
+}
+
+.column2{
+    float: left;
+    width: 40%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -110,6 +117,5 @@ input[type="text"] {
 }
 
 #searchCombo{
-display: inline-block;
-float: left;
+    text-align: center;
 }
