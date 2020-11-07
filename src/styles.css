@@ -16,6 +16,13 @@ body {
     height: 400px;
     transition: all 0.5s;
 }
+.big{
+    height: 800px;
+}
+
+.imageHolder{
+    
+}
 
 .mainTitle {
     margin: 0%;
