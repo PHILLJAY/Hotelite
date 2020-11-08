@@ -14,7 +14,15 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     height: 400px;
-    transition: all 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 .big {
@@ -32,6 +40,8 @@ body {
     color: #ff8811;
     transition: all 0.5s;
     float: left;
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
 
 .container {
@@ -99,10 +109,11 @@ body {
     border-radius: 30px;
     transition: all 0.5s;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    background-color:#ff8811;
+    background-color: #ff8811;
 }
 
 .container {
@@ -153,6 +164,26 @@ input[type="text"] {
 
 a {
     text-decoration: none;
+}
+
+
+.aboutText {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #fff8f0;
+}
+
+.aboutText>a {
+    text-decoration: underline solid transparent;
+    transition: text-decoration 0.5s ease;
+}
+
+.aboutText>a:visited {
+    color: #fff8f0;
+}
+
+.aboutText>a:hover {
+    text-decoration: underline solid Currentcolor;
 }
 
 #logoClick {
