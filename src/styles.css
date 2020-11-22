@@ -45,6 +45,35 @@ body {
     cursor: default;
 }
 
+.coolInfo {
+    font-family: 'Roboto', sans-serif;
+    width: 45%;
+}
+
+.hotelTitle {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+.priceTag {
+    color: #ff8811;
+    font-size: 40px;
+    margin-top: 0;
+
+}
+
+.perNight {
+    float: left;
+    margin-left: 45%;
+    margin-right: 35% ;
+}
+
+
+.hotelDetails {
+    display: block;
+}
+
 .container {
     display: flex;
     height: 100%;
@@ -166,8 +195,8 @@ input[type="text"] {
     font-weight: 400;
     font-size: 20px;
     background-color: #fff8f0;
-    margin-left: 45px;
-    padding-top: 50px;
+    margin-left: 10px;
+    padding-top: 60px;
 }
 
 #search {
@@ -180,6 +209,11 @@ input[type="text"] {
     overflow: hidden;
     padding: 20px 10px;
     background-color: #ff8811;
+}
+
+.headerTitle:hover{
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
+    
 }
 
 a {
@@ -218,4 +252,12 @@ a {
     margin-bottom: 20px;
     border: 3px;
     border-radius: 5px;
+    animation-name: fadein;
+    animation-duration: 1.0s;
+    transition: box-shadow 0.5s;
+    transition: text-shadow 0.5s;
+}
+#logoClick:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
 }
