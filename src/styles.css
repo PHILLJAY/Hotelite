@@ -74,6 +74,18 @@ body {
     display: block;
 }
 
+.reviews{
+
+}
+.reviews>h3{
+    float: left;
+    margin-right: 100%;
+}
+.reviews>p{
+    float: left;
+    width:32% ;
+}
+
 .container {
     display: flex;
     height: 100%;
@@ -177,7 +189,8 @@ body {
 }
 
 .imageHolder {
-    max-width: ;
+    max-width: 50%;
+    margin-right: 5%;
 }
 
 input[type="text"] {
@@ -255,9 +268,8 @@ a {
     animation-name: fadein;
     animation-duration: 1.0s;
     transition: box-shadow 0.5s;
-    transition: text-shadow 0.5s;
 }
 #logoClick:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
 }
+
