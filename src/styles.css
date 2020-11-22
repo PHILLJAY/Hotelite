@@ -242,6 +242,7 @@ a {
 .aboutText>a {
     text-decoration: underline solid transparent;
     transition: text-decoration 0.5s ease;
+    color: #fff8f0;
 }
 
 .aboutText>a:visited {
