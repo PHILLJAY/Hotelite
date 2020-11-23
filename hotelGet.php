@@ -7,14 +7,21 @@ $port = NULL; //Default must be NULL to use default port
 $mysqli = mysqli_connect('127.0.0.1', $user, $password, $database);
 
 
-$sql = "SELECT * FROM hotels WHERE HotelID = 3";
+if(empty($_GET['id'])){
+$hotel_id = 3;
+} else{
+    $hotel_id = $_GET['id'];
+}
+
+$sql = "SELECT * FROM hotels WHERE HotelID = $hotel_id";
 $result = mysqli_query($mysqli, $sql);
 
 $row = $result->fetch_assoc();
-$hotel_ID = $row["HotelID"];
+$hotel_name = $row["Hotel Name"];
 $hotel_rating = $row["Rating"];
 $price = $row["Price/Night"];
 
-echo $hotel_ID . $hotel_rating . $price;
+
+echo $hotel_id . " " . $hotel_rating . " " . $hotel_name . " " . $price;
 
 ?>

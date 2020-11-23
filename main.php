@@ -12,6 +12,13 @@
 </head>
 
 <body>
+<?php
+    $user = 'root';
+    $password = ''; //To be completed if you have set a password to root
+    $database = 'hotels'; //To be completed to connect to a database. The database must exist.
+    $port = NULL; //Default must be NULL to use default port
+    $mysqli = mysqli_connect('127.0.0.1', $user, $password, $database);
+    ?>
     <div class="titleCard">
 
         <div class="container">
@@ -44,6 +51,11 @@
                 <h3>Trending</h3>
             </div>
             <div class="column">
+                <?php
+                
+                
+                
+                ?>
                 <a href="hotelTemplate.php?id=1">
                     <div class="card">
                         <div class="side-crop">
