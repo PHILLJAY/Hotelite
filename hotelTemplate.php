@@ -42,6 +42,9 @@
     $review2 = $row["Review2"];
     $review3 = $row["Review3"];
 
+    $sql = "SELECT * FROM hotels WHERE HotelID = $hotel_id";
+
+
     //echo $hotel_id . " " . $hotel_rating . " " . $hotel_name . " " . $price;
 
     ?>
@@ -57,7 +60,7 @@
     <div class="titleCard big">
         <div class="container">
             <div class="imageHolder">
-                <img src="src/img/1-1.jpg" alt="SKARNERGAMING" style="width: 100%;">
+                <img src=<?php echo "src/img/" . $hotel_id . "-1.jpg"?> alt="SKARNERGAMING" style="width: 100%;">
             </div>
             <div class="coolInfo">
                 <p class="hotelTitle">
