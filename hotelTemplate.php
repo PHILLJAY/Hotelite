@@ -10,11 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <style>
-        .container {
-            flex-basis: 0;
-        }
-    </style>
+    <script type="text/javascript" src="src/slideshow.js"></script>
 </head>
 
 <body>
@@ -59,8 +55,8 @@
     </div>
     <div class="titleCard big">
         <div class="container">
-            <div class="imageHolder">
-                <img src=<?php echo "src/img/" . $hotel_id . "-1.jpg"?> alt="SKARNERGAMING" style="width: 100%;">
+         <div class="imageHolder">
+                <img src=<?php echo "src/img/" . $hotel_id . "-1.jpg" ?> alt="SKARNERGAMING" style="width: 100%;">
             </div>
             <div class="coolInfo">
                 <p class="hotelTitle">

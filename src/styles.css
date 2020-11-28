@@ -30,7 +30,6 @@ body {
     height: 800px;
 }
 
-.imageHolder {}
 
 .mainTitle {
     margin: 0%;
@@ -260,7 +259,6 @@ input[type="text"] {
     width: 250px;
 }
 
-#search_submit {}
 
 .headerTitle {
     overflow: hidden;
