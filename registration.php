@@ -24,7 +24,7 @@
     <div class="login-div">
         <div class="logo"></div>
         <div class="title">Hotelite</div>
-        <div class="sub-title">Login</div>
+        <div class="sub-title">register</div>
         <div class="fields">
             <form action="src/includes/registration.inc.php" method="POST">
                 <div class="username"> <svg class="svg-icon" viewBox="0 0 20 20">
@@ -47,11 +47,11 @@
                         </path>
                     </svg><input type="password" name="pass2" class="pass-input" placeholder="confirm password" required />
                 </div>
-                <button name="submit" class="signin-button">Login</button>
+                <button name="submit" class="signin-button">Register</button>
             </form>
         </div>
         <div class="link">
-            <a href="login.html">Login</a> or <a href="main.php">Return home</a>
+            <a href="login.php">Login</a> or <a href="main.php">Return home</a>
         </div>
 
         <div class="error">
