@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 
+
 <body>
     <?php
     $user = 'root';
@@ -28,6 +29,7 @@
                 <form action="">
                     <input id="search" name="search" type="text" placeholder="What are we looking for?">
                     <i class="fas fa-search" style="color:#f4d06f ;"></i>
+                
                 </form>
             </div>
         </div>
@@ -63,20 +65,20 @@
                 $price = $row["Price/Night"];
 
                 ?>
-                <a href="hotelTemplate.php?id=1">
+                <a href="hotelsite.php?id=1">
                     <div class="card">
                         <div class="side-crop">
-                            <img src="src/img/1-1.jpg" alt= <?php echo "\"" . $hotel_name ."\"" ?> style="width: 100%;">
+                            <img src="src/img/1-1.jpg" alt=<?php echo "\"" . $hotel_name . "\"" ?> style="width: 100%;">
                         </div>
                         <div class="conatiner">
-                            <p class="title"><?php echo $hotel_name?></p>
-                            <p class="priceNight" ><span class="priceTag">$<?php echo $price?></span> per night</p>
+                            <p class="title"><?php echo $hotel_name ?></p>
+                            <p class="priceNight"><span class="priceTag">$<?php echo $price ?></span> per night</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="column">
-            <?php
+                <?php
                 $hotel_id = 2;
 
                 $sql = "SELECT * FROM hotels WHERE HotelID = $hotel_id";
@@ -89,40 +91,40 @@
                 $price = $row["Price/Night"];
 
                 ?>
-                <a href="hotelTemplate.php?id=2">
+                <a href="hotelsite.php?id=2">
                     <div class="card">
                         <div class="side-crop">
                             <img src="src/img/2-1.jpg" alt="SKARNERGAMING" style="width: 100%;">
                         </div>
                         <div class="conatiner">
-                            <p class="title"><?php echo $hotel_name?></p>
-                            <p class="priceNight" ><span class="priceTag">$<?php echo $price?></span> per night</p>
+                            <p class="title"><?php echo $hotel_name ?></p>
+                            <p class="priceNight"><span class="priceTag">$<?php echo $price ?></span> per night</p>
                         </div>
                     </div>
                 </a>
             </div>
-            <a href="hotelTemplate.php?id=3">
+            <a href="hotelsite.php?id=3">
                 <div class="column">
-                <?php
-                $hotel_id = 3;
+                    <?php
+                    $hotel_id = 3;
 
-                $sql = "SELECT * FROM hotels WHERE HotelID = $hotel_id";
-                $result = mysqli_query($mysqli, $sql);
+                    $sql = "SELECT * FROM hotels WHERE HotelID = $hotel_id";
+                    $result = mysqli_query($mysqli, $sql);
 
 
-                $row = $result->fetch_assoc();
-                $hotel_name = $row["Hotel Name"];
-                $hotel_rating = $row["Rating"];
-                $price = $row["Price/Night"];
+                    $row = $result->fetch_assoc();
+                    $hotel_name = $row["Hotel Name"];
+                    $hotel_rating = $row["Rating"];
+                    $price = $row["Price/Night"];
 
-                ?>
+                    ?>
                     <div class="card">
                         <div class="side-crop">
                             <img src="src/img/3-1.jpg" alt="SKARNERGAMING" style="width: 100%;">
                         </div>
                         <div class="conatiner">
-                            <p class="title"><?php echo $hotel_name?></p>
-                            <p class="priceNight" ><span class="priceTag">$<?php echo $price?></span> per night</p>
+                            <p class="title"><?php echo $hotel_name ?></p>
+                            <p class="priceNight"><span class="priceTag">$<?php echo $price ?></span> per night</p>
                         </div>
                     </div>
             </a>
