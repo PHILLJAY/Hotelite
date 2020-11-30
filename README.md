@@ -1,2 +1,4 @@
 # Year2WebProgFinal
-Year2WebProgFinal ya dig
+Hotelite prototype
+PHP by: Liam/Philip
+CSS/Design/HTML by: Philip
