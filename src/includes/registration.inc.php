@@ -1,12 +1,10 @@
 <?php
 
-//var_dump($_POST);
-
 if (isset($_POST["submit"])){
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password_1 = $_POST['password_1'];
-    $password_2 = $_POST['password_2'];
+    $password_1 = $_POST['pass1'];
+    $password_2 = $_POST['pass2'];
 
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
@@ -32,7 +30,7 @@ if (isset($_POST["submit"])){
         exit();
     }
 
-    createUser($db,$username,$email, $firstN, $lastN, $password_1);
+    createUser($db,$username,$email, $password_1);
 
 }else{
     header("location: ../../registration.php");

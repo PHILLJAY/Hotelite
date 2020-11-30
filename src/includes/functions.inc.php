@@ -1,12 +1,13 @@
 <?php
 
-function emptyInputSignup($username,$email,$password_1, $password_2){
+function emptyInputSignup($username,$email, $password_1, $password_2){
     $result;
     if(empty($username)||empty($email)||empty($password_1)){
        $result= true; 
     } else {
         $result= false;
     }
+    debug_print_backtrace();
     return $result;
 }
 
@@ -17,6 +18,7 @@ function invalidUsername($username){
     } else {
         $result= false;
     }
+    debug_print_backtrace();
     return $result;
 }
 function invalidEmail($email){
@@ -26,6 +28,7 @@ function invalidEmail($email){
     } else {
         $result= false;
     }
+    debug_print_backtrace();
     return $result;
 }
 
@@ -36,6 +39,7 @@ function pwdMatch($password_1,$password_2){
     } else {
         $result= false;
     }
+    debug_print_backtrace();
     return $result;
 }
 
@@ -61,11 +65,11 @@ function userExists($db,$username,$email){
     }
     mysqli_stmt_close($stmt);
 }
-function createUser($db,$username,$email, $password_1){
-    $sql = "INSERT INTO users (FirstName, Password, EmailAddress) VALUES (?,?,?);";
+function createUser($db,$username, $email, $password_1){
+    $sql = "INSERT INTO users (Username, Password, EmailAddress) VALUES (?,?,?);";
     $stmt = mysqli_stmt_init($db);
     if (!mysqli_stmt_prepare($stmt, $sql)){
-        header("location: ../../registration.php?error=stmtfailed");
+       header("location: ../../registration.php?error=stmtfailed");
         exit();
     }
 
@@ -85,6 +89,7 @@ function emptyInputLogin($username, $pass){
     } else {
         $result= false;
     }
+    debug_print_backtrace();
     return $result;
 }
 function loginUser($db, $username, $pass){

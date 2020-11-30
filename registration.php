@@ -21,6 +21,11 @@
 </head>
 
 <body>
+<?php
+debug_print_backtrace();
+var_dump($_POST);
+?>
+
     <div class="login-div">
         <div class="logo"></div>
         <div class="title">Hotelite</div>
