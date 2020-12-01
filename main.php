@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 
 <html>
@@ -8,6 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7ce3b8b35e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/styles.css">
+    <style>
+        .logintext{
+            font-family: 'Roboto', sans-serif;
+            color: #292f36;
+            padding-top: 1%;
+            margin-top: 0%;
+        }
+        .logintext a{
+            font-family: 'Roboto', sans-serif;
+            color: #ff8811;
+            padding-top: 1%;
+            margin-top: 0%;
+        }
+    </style>
 </head>
 
 
@@ -20,8 +35,16 @@
     $mysqli = mysqli_connect('127.0.0.1', $user, $password, $database);
     ?>
     <div class="titleCard">
+        <?php
+        if (isset($_SESSION["userid"])) {
+            echo "<p class=\"logintext\" >Welcome to Hotelite " . $_SESSION["userName"] . " <a href=\"src/includes/logout.inc.php\">logout</a> </p>";
+        } else {
+            echo "<p class=\"logintext\" ><a href=\"login.php\">Login</a></p>";
+        }
+        ?>
 
         <div class="container">
+
             <div>
                 <h1 class="mainTitle">Hotelite</h1>
             </div>
@@ -29,7 +52,7 @@
                 <form action="">
                     <input id="search" name="search" type="text" placeholder="What are we looking for?">
                     <i class="fas fa-search" style="color:#f4d06f ;"></i>
-                
+
                 </form>
             </div>
         </div>

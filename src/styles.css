@@ -14,6 +14,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     height: 400px;
+    font-family: 'Roboto', sans-serif;
 }
 
 @keyframes fadein {
@@ -157,7 +158,7 @@ body {
         font-size: 80px;
     }
     .titleCard {
-        height: 200px;
+        height: 350px;
     }
 }
 
@@ -314,16 +315,17 @@ a {
 
 .login-div {
     margin: auto;
+    margin-top: 50px;
     width: 430px;
     height: 700px;
-    padding: 60px 35px 35px 35px;
+    padding: 60px 35px 10px 35px;
     border-radius: 50px;
     background: #fff8f0;
     box-shadow: 20px 20px 60px #d9d3cc, -20px -20px 60px #ffffff;
 }
 
 .logo {
-    background: url("src/img/Hotelite Logo.png");
+    background: url("img/logo.png");
     width: 100px;
     height: 100px;
     border-radius: 50%;

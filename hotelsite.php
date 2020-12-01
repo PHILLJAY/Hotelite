@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 
 <html>
@@ -49,7 +50,15 @@
         <a href="main.php">
             <h1 id="logoClick">Hotelite</h1>
         </a>
-        <div class="aboutText"><a href="about.html">
+        <div class="aboutText">
+        <?php
+        if (isset($_SESSION["userid"])) {
+            echo "<a href=\"src/includes/logout.inc.php\">logout</a> </p>";
+        } else {
+            echo "<p><a href=\"login.php\">Login</a></p>";
+        }
+        ?>
+            <a href="about.html">
                 <p>about</p>
             </a></div>
     </div>
